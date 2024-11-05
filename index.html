@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lamborghini</title>
+    <head>
+        <link rel="shortcut icon" type="image/x-icon" href="favicon.ico" />
+      </head>
+    <style>
+        body {
+            background-color: #181818; /* Set background color */
+            font-family: 'Helvetica Neue', Arial, sans-serif; /* Use a more corporate font */
+            margin: 0;
+            padding: 0; /* Remove default padding */
+            color: white; /* Set text color to white for contrast */
+            overflow-x: hidden; /* Prevent horizontal scroll */
+        }
+
+        .video-container {
+            position: fixed; /* Keep video fixed in background */
+            top: 0;
+            left: 0;
+            width: 100%; /* Full width */
+            height: 100%; /* Full height */
+            z-index: 0; /* Behind other content */
+            overflow: hidden; /* Hide overflow */
+            filter: brightness(90%); /* Decrease brightness by 10% */
+        }
+
+        video {
+            width: 100%; /* Make video responsive */
+            height: 100%; /* Fill container */
+            object-fit: cover; /* Cover the entire container */
+        }
+
+        .panel {
+            position: absolute; /* Absolute positioning */
+            top: 0;
+            left: 0;
+            width: 100%; /* Full width */
+            padding: 20px; /* Add some padding */
+            background-color: rgba(0, 0, 0, 0.9); /* Semi-transparent black background */
+            z-index: 1; /* Above video */
+        }
+
+        .panel h1 {
+            margin: 0; /* Remove default margin */
+        }
+
+        .panel a {
+            color: white;
+            padding: 10px 15px;
+            text-decoration: none;
+            display: inline-block;
+            transition: background-color 0.3s; /* Transition for background color */
+        }
+
+        .panel a:hover {
+            background-color: #444; /* Slightly lighter grey on hover */
+        }
+
+        .content {
+            position: relative; /* Allow content to scroll over the video */
+            z-index: 1; /* Ensure content is above the video */
+            padding: 80px 20px 20px; /* Add padding for scrollable content */
+            max-width: 800px; /* Limit width of content */
+            margin: auto; /* Center content */
+        }
+    </style>
+</head>
+<body>
+
+    <div class="video-container">
+        <video autoplay muted loop>
+            <source src="veneno.mp4" type="video/mp4">
+            Your browser does not support the video tag.
+        </video>
+    </div>
+
+    <div class="panel">
+        <h1>Lamborghini</h1>
+        <a href="about.html">About</a>
+        <a href="cars.html">Cars</a>
+        <a href="https://www.lamborghini.com/en-en/store">Store</a>
+    </div>
+
+</body>
+</html>

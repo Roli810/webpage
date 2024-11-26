@@ -9,43 +9,48 @@
       </head>
     <style>
         body {
-            background-color: #181818; /* Set background color */
-            font-family: 'Helvetica Neue', Arial, sans-serif; /* Use a more corporate font */
+            background-color: #181818;
+            font-family: 'Helvetica Neue', Arial, sans-serif;
             margin: 0;
-            padding: 0; /* Remove default padding */
-            color: white; /* Set text color to white for contrast */
-            overflow-x: hidden; /* Prevent horizontal scroll */
+            padding: 0;
+            color: white;
+            overflow-x: hidden;
+            font-family: Arial, sans-serif; /* Default font family */
+            margin: 0;
+            padding: 0;
+            min-height: 100vh;
+            position: relative;
         }
 
         .video-container {
-            position: fixed; /* Keep video fixed in background */
+            position: fixed;
             top: 0;
             left: 0;
-            width: 100%; /* Full width */
-            height: 100%; /* Full height */
-            z-index: 0; /* Behind other content */
-            overflow: hidden; /* Hide overflow */
-            filter: brightness(90%); /* Decrease brightness by 10% */
+            width: 100%; 
+            height: 100%;
+            z-index: 0;
+            overflow: hidden;
+            filter: brightness(90%);
         }
 
         video {
-            width: 100%; /* Make video responsive */
-            height: 100%; /* Fill container */
-            object-fit: cover; /* Cover the entire container */
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
         }
 
         .panel {
-            position: absolute; /* Absolute positioning */
+            position: absolute;
             top: 0;
             left: 0;
-            width: 100%; /* Full width */
-            padding: 20px; /* Add some padding */
-            background-color: rgba(0, 0, 0, 0.9); /* Semi-transparent black background */
-            z-index: 1; /* Above video */
+            width: 100%;
+            padding: 20px;
+            background-color: rgba(0, 0, 0, 0.9);
+            z-index: 1;
         }
 
         .panel h1 {
-            margin: 0; /* Remove default margin */
+            margin: 0;
         }
 
         .panel a {
@@ -53,20 +58,38 @@
             padding: 10px 15px;
             text-decoration: none;
             display: inline-block;
-            transition: background-color 0.3s; /* Transition for background color */
+            transition: background-color 0.3s;
         }
 
         .panel a:hover {
-            background-color: #444; /* Slightly lighter grey on hover */
+            background-color: #444;
         }
 
         .content {
-            position: relative; /* Allow content to scroll over the video */
-            z-index: 1; /* Ensure content is above the video */
-            padding: 80px 20px 20px; /* Add padding for scrollable content */
-            max-width: 800px; /* Limit width of content */
-            margin: auto; /* Center content */
+            position: relative;
+            z-index: 1;
+            padding: 80px 20px 20px;
+            max-width: 800px;
+            margin: auto;
         }
+        /* styles.css */
+
+        
+.activate-linux-footer {
+    position: fixed;
+    bottom: 10px; /* Adjust the distance from the bottom of the screen */
+    left: 50%;
+    transform: translateX(-50%);
+    font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif; /* Same font as Windows watermark */
+    font-size: 24px;
+    font-weight: bold;
+    color: rgba(255, 255, 255, 0.6); /* White color with transparency */
+    text-align: center;
+    letter-spacing: 1px;
+    z-index: 9999; /* Ensure it's always visible above other content */
+    opacity: 0.75; /* Semi-transparent look */
+    pointer-events: none; /* Prevent interaction with the footer */
+}
     </style>
 </head>
 <body>
@@ -83,7 +106,10 @@
         <a href="about.html">About</a>
         <a href="cars.html">Cars</a>
         <a href="https://www.lamborghini.com/en-en/store">Store</a>
+        <a href="table.html">Table</a>
     </div>
-
+    <div class="activate-linux-footer">
 </body>
 </html>
+
+
